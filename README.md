@@ -1,6 +1,6 @@
 # remath
 
-![Alt text](./img/remathdark.svg)
+![Alt text](./static/img/remathdark.svg)
 
 math reimagined.. concept only
 
