@@ -8,6 +8,8 @@ RUN chmod +x generate_certs.sh && ./generate_certs.sh
 
 FROM registry.fedoraproject.org/fedora-minimal 
 WORKDIR / 
+COPY static /static
+RUN ls -la / && ls -la /usr/local/bin 
 COPY --from=build /go/bin/remath /usr/local/bin 
 COPY --from=build /go/server.* /
 CMD ["remath"] 
