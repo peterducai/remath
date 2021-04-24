@@ -20,7 +20,11 @@ func ApiMainfunc(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	mux := http.NewServeMux()
+
+	// HANDLES
 	mux.HandleFunc("/", ApiMainfunc)
+	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
+
 	cfg := &tls.Config{
 		MinVersion:               tls.VersionTLS12,
 		CurvePreferences:         []tls.CurveID{tls.CurveP521, tls.CurveP384, tls.CurveP256},
