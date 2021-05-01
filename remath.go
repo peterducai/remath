@@ -4,26 +4,19 @@ import (
 	"crypto/tls"
 	"log"
 	"net/http"
+
+	"github.com/peterducai/remath/api"
 )
-
-func HelloServer(w http.ResponseWriter, req *http.Request) {
-	w.Header().Set("Content-Type", "text/plain")
-	w.Write([]byte("This is an example server.\n"))
-	// fmt.Fprintf(w, "This is an example server.\n")
-	// io.WriteString(w, "This is an example server.\n")
-}
-
-func ApiMainfunc(w http.ResponseWriter, req *http.Request) {
-	w.Header().Add("Strict-Transport-Security", "max-age=63072000; includeSubDomains")
-	w.Write([]byte("re::MATH server.\n"))
-}
 
 func main() {
 	mux := http.NewServeMux()
+	var z = api.Addition(324, 2344)
+	println(z)
 
 	// HANDLES
-	mux.HandleFunc("/", ApiMainfunc)
-	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
+	mux.HandleFunc("/addition", api.ApiAddition)
+	mux.HandleFunc("/matrixaddition", api.ApiMatrixAddition)
+	mux.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir("./static"))))
 
 	cfg := &tls.Config{
 		MinVersion:               tls.VersionTLS12,
