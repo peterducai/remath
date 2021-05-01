@@ -4,11 +4,6 @@ import (
 	"net/http"
 )
 
-func MatrixAddition(x int64, y int64) int64 {
-	var z = x + y
-	return z
-}
-
 func ApiMatrixAddition(w http.ResponseWriter, req *http.Request) {
 	w.Header().Add("Strict-Transport-Security", "max-age=63072000; includeSubDomains")
 	//w.Write([]byte(strconv.FormatInt(MatrixAddition(4323, 54325), 10)))

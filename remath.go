@@ -10,8 +10,6 @@ import (
 
 func main() {
 	mux := http.NewServeMux()
-	var z = api.Addition(324, 2344)
-	println(z)
 
 	// HANDLES
 	mux.HandleFunc("/addition", api.ApiAddition)
