@@ -64,3 +64,44 @@ v_{n} w_{1} & v_{n} w_{2} & \cdots & v_{n} w_{m}
 \end{array}\right]
 $$
 
+
+
+gradient
+
+
+$$
+\nabla f(\left.x_{1}, x_{2}, \ldots, x_{n}\right)=\left[\begin{array}{c}
+\dfrac{\partial f}{\partial x_1}(\left.x_{1}, x_{2}, \ldots, x_{n}\right)\\
+\dfrac{\partial f}{\partial x_2}(\left.x_{1}, x_{2}, \ldots, x_{n}\right) \\
+\vdots \\
+\dfrac{\partial f}{\partial x_n}(\left.x_{1}, x_{2}, \ldots, x_{n}\right) 
+\end{array}\right]
+$$
+
+Jacobian
+
+$$\mathbb{J}$$
+
+$$
+\begin{aligned}
+\mathbf{f}(\mathbf{x})&=\mathbf{f}(x_1,x_2,\dots,x_n)\\
+&=(f_1(x_1,x_2,\dots,x_n),,\dots,f_m(x_1,x_2,\dots,x_n))\\
+&=(f_1(\mathbf{x}),,\dots,f_m(\mathbf{x}))
+\end{aligned}
+$$
+
+$$
+\mathbb{J}=\left[\begin{array}{ccc}
+\dfrac{\partial \mathbf{f}(\mathbf{x})}{\partial x_{1}} & \cdots & \dfrac{\partial \mathbf{f}(\mathbf{x})}{\partial x_{n}}
+\end{array}\right]=\left[\begin{array}{c}
+\nabla^{T} f_{1}(\mathbf{x}) \\
+\vdots \\
+\nabla^{T} f_{m}(\mathbf{x})
+\end{array}\right]=\left[\begin{array}{ccc}
+\dfrac{\partial f_{1}(\mathbf{x})}{\partial x_{1}} & \cdots & \dfrac{\partial f_{1}(\mathbf{x})}{\partial x_{n}} \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial f_{m}(\mathbf{x})}{\partial x_{1}} & \cdots & \dfrac{\partial f_{m}(\mathbf{x})}{\partial x_{n}}
+\end{array}\right]
+$$
+
+$$\mathbb{J}_{i,j}=\dfrac{\partial f_{i}(\mathbf{x})}{\partial x_{j}}$$
