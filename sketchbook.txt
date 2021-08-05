@@ -1,0 +1,66 @@
+tensor product of 3 vectors
+
+
+$$
+\mathbf{x} \otimes \mathbf{y} \otimes \mathbf{z}=
+\begin{aligned}
+\left[\begin{array}{l}
+x_{1} \\
+x_{2}
+\end{array}\right] \otimes\left[\begin{array}{l}
+y_{1} \\
+y_{2}
+\end{array}\right] \otimes\left[\begin{array}{l}
+z_{1} \\
+z_{2}
+\end{array}\right]=\left[\begin{array}{l}
+x_{1} \\
+x_{2}
+\end{array}\right] \otimes\left[\begin{array}{l}
+y_{1} z_{1} \\
+y_{1} z_{2} \\
+y_{2} z_{1} \\
+y_{2} z_{2}
+\end{array}\right] =\left[\begin{array}{l}
+x_{1} y_{1} z_{1} \\
+x_{1} y_{1} z_{2} \\
+x_{1} y_{2} z_{1} \\
+x_{1} y_{2} z_{2} \\
+x_{2} y_{1} z_{1} \\
+x_{2} y_{1} z_{2} \\
+x_{2} y_{2} z_{1} \\
+x_{2} y_{2} z_{2}
+\end{array}\right]
+\end{aligned}
+$$
+
+
+Tensor product
+
+
+$$
+\mathbf{v}=\left[\begin{array}{c}
+v_{1} \\
+v_{2} \\
+\vdots \\
+v_{n}
+\end{array}\right], \mathbf{w}=\left[\begin{array}{c}
+w_{1} \\
+w_{2} \\
+\vdots \\
+w_{m}
+\end{array}\right]
+$$
+
+Tensor product of $\mathbf{v}$ and $\mathbf{w}$ is given by
+
+$$
+\underset{\underset{\scriptstyle\text{\bigotimes}}{\scriptstyle}}{\mathbf{v} \bigotimes \mathbf{w}} = 
+\underset{\underset{\scriptstyle\text{\otimes}}{\scriptstyle}}{\mathbf{v} \otimes \mathbf{w}}=\left[\begin{array}{cccc}
+v_{1} w_{1} & v_{1} w_{2} & \cdots & v_{1} w_{m} \\
+v_{2} w_{1} & v_{2} w_{2} & \cdots & v_{2} w_{m} \\
+\vdots & \vdots & \ddots & \vdots \\
+v_{n} w_{1} & v_{n} w_{2} & \cdots & v_{n} w_{m}
+\end{array}\right]
+$$
+
