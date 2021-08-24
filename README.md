@@ -2,7 +2,7 @@
 
 ![Alt text](./static/img/remathdark.svg)
 
-math reimagined.. concept only
+math reimagined.. CONCEPT ONLY
 
 > buildah bud -t remath:latest
 

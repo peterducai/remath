@@ -17,3 +17,8 @@ node_modules
 # vendor/
 server.*
 cert.*
+target
+
+# Added by cargo
+
+/target
