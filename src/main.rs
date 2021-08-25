@@ -43,7 +43,7 @@ fn handle_route(mut stream: TcpStream) {
     }
 
     let mut a = "static";
-    let pth = [a, urlsub].join("");
+    let pth = [a, urlsub].join("").to_owned();
     let status_line = "HTTP/1.1 200 OK";
     //let notfound =  "HTTP/1.1 404 NOTFOUND";
     let notfound = String::from("HTTP/1.1 404 NOTFOUND");
@@ -62,21 +62,20 @@ fn handle_route(mut stream: TcpStream) {
     //     Err(error) => panic!("Problem opening the file: {:?}", error),
     // };
 
-        let pth2 = pth;
 
-    let contents = fs::read_to_string(pth2).unwrap();
+    let contents = fs::read_to_string(pth).unwrap();
 
-    let ct = match contents {
-        Ok(bb) => bb,
-        //Err(error) => panic!("Problem opening the file: {:?}", error),
-        Err(error) => notfound,
-    };
+    // let ct = match contents {
+    //     Ok(bb) => bb,
+    //     //Err(error) => panic!("Problem opening the file: {:?}", error),
+    //     Err(error) => notfound,
+    // };
 
     let response = format!(
         "{}\r\nContent-Length: {}\r\n\r\n{}",
         status_line,
-        ct.len(),
-        ct
+        contents.len(),
+        contents
     );
 
     stream.write(response.as_bytes()).unwrap();
