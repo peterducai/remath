@@ -6,6 +6,6 @@ math reimagined.. CONCEPT ONLY
 
 > buildah bud -t remath:latest .
 
-> podman run -dt -p 8000:8000/tcp localhost/remath
+> podman run -dt -p 7878:7878/tcp localhost/remath
 
-see https://localhost:8000/static/
+see http://localhost:7878/
