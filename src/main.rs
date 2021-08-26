@@ -1,17 +1,21 @@
 use remath::ThreadPool;
-use std::fs;
+// use std::fs;
 use std::io::prelude::*;
 use std::net::TcpListener;
 use std::net::TcpStream;
-use std::thread;
-use std::time::Duration;
-use std::error::Error;
-use std::path::Path;
+// use std::thread;
+// use std::time::Duration;
+// use std::error::Error;
+// use std::path::Path;
 use std::fs::File;
+// use std::io::ErrorKind;
+// use std::io;
+// use std::io::Read;
 
 
 fn main() {
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    println!("listening at http://127.0.0.1:7878");
     let pool = ThreadPool::new(4);
 
     for stream in listener.incoming() {
@@ -23,6 +27,23 @@ fn main() {
     }
 
     println!("Shutting down.");
+}
+
+fn read_from_file(path: &String) -> Result<String, io::Error> {
+
+    let mut f = File::open(path);
+    let mut f = match f {
+        Ok(file) => file,
+        Err(e) => return Err(e),
+    };
+
+    let mut s = String::new();
+
+    match f.read_to_string(&mut s) {
+        Ok(s) => s,
+        Err(_) => continue,
+    };
+
 }
 
 
@@ -55,21 +76,15 @@ fn handle_route(mut stream: TcpStream) {
 
     // let f = File::open(pth);
 
-    // let f = match f {
-    //     Ok(file) => file,
-    //     //Err(error) => panic!("Problem opening the file: {:?}", error),
-    //     //Err(error) => (status_line, pth) = ("HTTP/1.1 404 NOTFOUND", pth),
-    //     Err(error) => panic!("Problem opening the file: {:?}", error),
-    // };
 
 
-    let contents = fs::read_to_string(pth).unwrap();
+    let mut contents = read_from_file(&pth).unwrap();
 
-    // let ct = match contents {
-    //     Ok(bb) => bb,
-    //     //Err(error) => panic!("Problem opening the file: {:?}", error),
-    //     Err(error) => notfound,
-    // };
+    //let mut contents = fs::read_to_string(pth).unwrap();
+
+    if contents == "" {
+        contents = String::from("HTTP/1.1 404 NOTFOUND");
+    }
 
     let response = format!(
         "{}\r\nContent-Length: {}\r\n\r\n{}",

@@ -4,7 +4,7 @@
 
 math reimagined.. CONCEPT ONLY
 
-> buildah bud -t remath:latest
+> buildah bud -t remath:latest .
 
 > podman run -dt -p 8000:8000/tcp localhost/remath
 
