@@ -15,3 +15,4 @@ RUN ls -la / && ls -la /usr/local/bin
 COPY --from=build /remath/target/debug/remath /usr/local/bin 
 # COPY --from=build /go/server.* /
 CMD ["remath"] 
+EXPOSE 7878

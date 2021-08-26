@@ -3,10 +3,10 @@ use std::sync::Arc;
 use std::sync::Mutex;
 use std::thread;
 
-enum Result<T, E> {
-    Ok(T),
-    Err(E),
-}
+// enum Result<T, E> {
+//     Ok(T),
+//     Err(E),
+// }
 
 pub struct ThreadPool {
     workers: Vec<Worker>,
