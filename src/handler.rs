@@ -22,7 +22,7 @@ pub fn handle_route(mut stream: TcpStream) {
 
     let a = "static"; // URL/static + urlsub
     let pth = [a, urlsub].join("").to_owned();
-    let mut status_line = "HTTP/1.1 200 OK";
+    //let status_line = "HTTP/1.1 200 OK";
     // let contents = "data";
 
 
