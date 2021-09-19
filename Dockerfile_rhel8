@@ -1,0 +1,15 @@
+# building container 
+FROM registry.access.redhat.com/ubi8/ubi AS build 
+RUN mkdir /remath && dnf install git rust cargo -y && dnf clean all -y
+WORKDIR /remath 
+COPY . /remath
+RUN cd /remath && cargo build
+
+FROM registry.access.redhat.com/ubi8/ubi 
+WORKDIR / 
+COPY static /static
+RUN ls -la / && ls -la /usr/local/bin 
+COPY --from=build /remath/target/debug/remath /usr/local/bin 
+# COPY --from=build /go/server.* /
+CMD ["remath"] 
+EXPOSE 7878
