@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/patternfly.css">
-  <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraph.css' />
-  <script src='https://cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraphcore.js' type='text/javascript'></script>
-  <script src='https://cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/geonext.min.js' type='text/javascript'></script>
+  <link rel='stylesheet' type='text/css' href='css/jsxgraph.css' />
+  <script src='js/jsxgraphcore.js' type='text/javascript'></script>
+  <script src='js/geonext.min.js' type='text/javascript'></script>
   <script src="js/tex-svg-full.js" id="MathJax-script" async></script>
   <title>Re::Math</title>
 </head>
@@ -74,6 +74,12 @@
         <div class="pf-c-content">
           <h1>Modules</h1>
           <p>Currently installed modules.</p>
+          <div id='jxgbox' class='jxgbox' style='width:190px; height:190px;'></div><script type='text/javascript'>
+            var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox: [-10, 10, 10, -10]});
+            var a = board.create('slider', [[0,5],[8,5],[0,4,30]],{name:'a'});
+            var c = board.create('curve', [function(phi){return a.Value()/phi; }, [0, 0],0, 8*Math.PI],
+                        {curveType:'polar', strokewidth:4});        
+           </script>
           <ul class="pf-c-list">
             <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
             <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
@@ -171,13 +177,6 @@
                     </div>
                     <img src="img/orbitals.png" />
                     <div class="pf-c-card__body">
-
-                      <div id='jxgbox' class='jxgbox' style='width:190px; height:190px;'></div><script type='text/javascript'>
- var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox: [-10, 10, 10, -10]});
- var a = board.create('slider', [[0,5],[8,5],[0,4,30]],{name:'a'});
- var c = board.create('curve', [function(phi){return a.Value()/phi; }, [0, 0],0, 8*Math.PI],
-             {curveType:'polar', strokewidth:4});        
-</script>
                       <!-- \[
                       -\dfrac{\hslash^2}{2m \partial x^{2^{1^1}}}
                       \, \dfrac{\partial^2 \psi}{\partial x^{2^{1^1}}}
