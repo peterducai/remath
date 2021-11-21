@@ -2,7 +2,7 @@
 # Install dependencies
 
 ``` 
-sudo dnf install python-devtools-doc rust-cpython-devel dbus-python-devel
+sudo dnf install conda python-devtools-doc rust-cpython-devel dbus-python-devel
 sudo dnf install python3-devel -y
 sudo dnf install numpy python3-h5py -y
 pip install --no-binary :all: psutil
@@ -30,3 +30,5 @@ dependencies:
 
 conda env create -f qiskitenv.yml
 conda activate QISKitenv2
+
+jupyter notebook
