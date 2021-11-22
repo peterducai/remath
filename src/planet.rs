@@ -14,7 +14,7 @@ impl Planet {
     println!("The new name for the ID {}, is {}", self.emp_id, self.emp_name);
     }
     
-    fn create_Mars(id: u32, name: String) -> Planet {
+    fn create_mars(id: u32, name: String) -> Planet {
     Planet { emp_id: id, emp_name: name }
     }
 }
