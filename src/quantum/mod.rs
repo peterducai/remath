@@ -1,1 +1,1 @@
-pub mod gate_hadamard;
+pub mod hadamard_gate;

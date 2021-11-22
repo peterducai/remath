@@ -4,3 +4,4 @@ pub mod threader;
 pub mod png;
 pub mod planet;
 pub mod astro;
+pub mod quantum;
