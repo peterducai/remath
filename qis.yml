@@ -1,0 +1,16 @@
+name: QISKitenv22
+dependencies:
+- python=3
+- pip
+- notebook
+- scipy
+- cvxopt
+- psutil
+- scikit-learn
+- cython
+- matplotlib
+- sympy
+- pillow
+- numpy=1.13
+- pip:
+  - qiskit[visualization]

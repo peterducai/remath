@@ -21,6 +21,6 @@ target
 
 # Added by cargo
 
-/target
+target
 x
 node_modules
