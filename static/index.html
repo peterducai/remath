@@ -117,6 +117,7 @@ var t = board.create('transform', [function(){ return 2*f.Value(); }, function()
 phi.bindTo([f1, f2, p, e1, e2, o]);
 t.bindTo([f1, f2, p, e1, e2, o]);       
            </script>
+
           <ul class="pf-c-list">
             <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
             <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
@@ -129,6 +130,17 @@ t.bindTo([f1, f2, p, e1, e2, o]);
             </li>
             <li>Ut non enim metus.</li>
           </ul>
+
+          \[
+          \newcommand{\ra}[1]{\kern-1.5ex\xrightarrow{\ \ #1\ \ }\phantom{}\kern-1.5ex}
+          \newcommand{\ras}[1]{\kern-1.5ex\xrightarrow{\ \ \smash{#1}\ \ }\phantom{}\kern-1.5ex}
+          \newcommand{\da}[1]{\bigg\downarrow\raise.5ex\rlap{\scriptstyle#1}}
+          \begin{array}{c}
+          0 & \ra{f_1} & A & \ra{f_2} & B & \ra{f_3} & C & \ra{f_4} & D & \ra{f_5} & 0 \\
+          \da{g_1} & & \da{g_2} & & \da{g_3} & & \da{g_4} & & \da{g_5} & & \da{g_6} \\
+          0 & \ras{h_1} & 0 & \ras{h_2} & E & \ras{h_3} & F & \ras{h_4} & 0 & \ras{h_5} & 0 \\
+          \end{array}
+          \]
         </div>
       </section>
 
