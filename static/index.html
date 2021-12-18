@@ -17,6 +17,7 @@
   <div class="pf-c-page" id="primary-detail-card-view-expanded-example">
     <a class="pf-c-skip-to-content pf-c-button pf-m-primary"
       href="#main-content-primary-detail-card-view-expanded-example">Skip to content</a>
+
     <header class="pf-c-page__header">
       <div class="pf-c-page__header-brand">
         <div class="pf-c-page__header-brand-toggle">
@@ -42,9 +43,11 @@
               <i class="pf-icon pf-icon-help" aria-hidden="true"></i>
             </button>
           </div>
+          
         </div>
       </div>
     </header>
+
     <div class="pf-c-page__sidebar">
       <div class="pf-c-page__sidebar-body">
         <nav class="pf-c-nav" id="primary-detail-card-view-expanded-example-primary-nav" aria-label="Global">
@@ -68,55 +71,31 @@
         </nav>
       </div>
     </div>
+
+
     <main class="pf-c-page__main" tabindex="-1">
 
       <section class="pf-c-page__main-section pf-m-light">
+
+      </section>
+
+      <!-- <section class="pf-c-page__main-section pf-m-light">
         <div class="pf-c-content">
           <h1>Modules</h1>
           <p>Currently installed modules.</p>
-          <div id='jxgbox' class='jxgbox' style='width:190px; height:190px;'></div><script type='text/javascript'>
-            JXG.Options.label.autoPosition = true;
-JXG.Options.text.fontSize = 16;
-JXG.Options.line.strokeWidth = 0.8;
-JXG.Options.point.size = 1;
-
-var board = JXG.JSXGraph.initBoard('jxgbox', { boundingbox: [-5, 5, 5, -5], axis: true, showClearTraces: true});
-
-const sq5 = Math.sqrt(5);
-
-// Start with the Euclidean normal form of the quadric,
-// because we easily can read off the focal points.
-var f1 = board.create('point', [0, -sq5], {name:"f'", fixed: true});
-var f2 = board.create('point', [0, sq5], {name:"f", fixed: true});
-var p  = board.create('point', [2, Math.sqrt(2)], {name:"p", fixed: true});
-
-var o = board.create('point', [0, 0], {withLabel:false, color: 'blue', fixed: true, trace:true});
-var e1 = board.create('point', [1, 0], {withLabel:false, color: 'blue', fixed: true});
-var e2 = board.create('point', [0, 1], {withLabel:false, color: 'blue', fixed: true});
-
-// Undo the principal axis transformation to recompute the original form of the quadric
-var phi0 = board.create('transform', [-Math.PI * 0.25], {type: 'rotate'});
-var t0 = board.create('transform', [-2, 1], {type: 'translate'});
-t0.bindTo([f1, f2, p, o, e1, e2]);
-phi0.bindTo([f1, f2, p, o, e1, e2]);
-
-var hyp = board.create('hyperbola', [f1, f2, p]);
-
-// Create transformed axes
-var ax_z1 = board.create('line', [o, e1], {lastArrow: true, strokeColor:'black'});
-var ax_z2 = board.create('line', [o, e2], {lastArrow: true, strokeColor:'black'});
-board.update();
-
-// Visualization of the principal axis transformation
-var alpha = board.create('slider', [[1,4], [3,4], [0, 0, 45]], {name:'&alpha;', unitLabel:'°'});
-var f = board.create('slider', [[1,3.5], [3,3.5], [0, 0, 1]], {name:'f'});
-
-var phi = board.create('transform', [function(){ return alpha.Value() * Math.PI / 180; }], {type: 'rotate'});
-var t = board.create('transform', [function(){ return 2*f.Value(); }, function(){ return -f.Value(); }], {type: 'translate'});
-
-phi.bindTo([f1, f2, p, e1, e2, o]);
-t.bindTo([f1, f2, p, e1, e2, o]);       
-           </script>
+          
+            <div>
+            \[
+            \newcommand{\ra}[1]{\kern-1.5ex\xrightarrow{\ \ #1\ \ }\phantom{}\kern-1.5ex}
+            \newcommand{\ras}[1]{\kern-1.5ex\xrightarrow{\ \ \smash{#1}\ \ }\phantom{}\kern-1.5ex}
+            \newcommand{\da}[1]{\bigg\downarrow\raise.5ex\rlap{\scriptstyle#1}}
+            \begin{array}{c}
+            0 & \ra{f_1} & A & \ra{f_2} & B & \ra{f_3} & C & \ra{f_4} & D & \ra{f_5} & 0 \\
+            \da{g_1} & & \da{g_2} & & \da{g_3} & & \da{g_4} & & \da{g_5} & & \da{g_6} \\
+            0 & \ras{h_1} & 0 & \ras{h_2} & E & \ras{h_3} & F & \ras{h_4} & 0 & \ras{h_5} & 0 \\
+            \end{array}
+            \]
+           </div>
 
           <ul class="pf-c-list">
             <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
@@ -131,18 +110,8 @@ t.bindTo([f1, f2, p, e1, e2, o]);
             <li>Ut non enim metus.</li>
           </ul>
 
-          \[
-          \newcommand{\ra}[1]{\kern-1.5ex\xrightarrow{\ \ #1\ \ }\phantom{}\kern-1.5ex}
-          \newcommand{\ras}[1]{\kern-1.5ex\xrightarrow{\ \ \smash{#1}\ \ }\phantom{}\kern-1.5ex}
-          \newcommand{\da}[1]{\bigg\downarrow\raise.5ex\rlap{\scriptstyle#1}}
-          \begin{array}{c}
-          0 & \ra{f_1} & A & \ra{f_2} & B & \ra{f_3} & C & \ra{f_4} & D & \ra{f_5} & 0 \\
-          \da{g_1} & & \da{g_2} & & \da{g_3} & & \da{g_4} & & \da{g_5} & & \da{g_6} \\
-          0 & \ras{h_1} & 0 & \ras{h_2} & E & \ras{h_3} & F & \ras{h_4} & 0 & \ras{h_5} & 0 \\
-          \end{array}
-          \]
         </div>
-      </section>
+      </section> -->
 
       <section class="pf-c-page__main-section pf-m-no-padding">
         <!-- Drawer -->
@@ -152,6 +121,23 @@ t.bindTo([f1, f2, p, e1, e2, o]);
             <div class="pf-c-drawer__content pf-m-no-background">
               <div class="pf-c-drawer__body pf-m-padding">
                 <div class="pf-l-gallery pf-m-gutter">
+
+                  <!-- TEMPLATE CARD -->
+                  <div class="pf-c-card pf-m-selectable" id="primary-detail-card-view-expanded-example-card-10">
+                    <div class="pf-c-card__title">
+                      <p id="primary-detail-card-view-expanded-example-card-10-check-label"><h1 class="pf-c-title pf-m-3xl">Module name</h1></p>
+                      <div class="pf-c-content">
+                        <small>Provided by Core</small>
+                      </div>
+                    </div>
+                    <img src="img/orbitals.png" />  <!-- or js code -->
+                    <div class="pf-c-card__body">
+                      <!-- mathjax/tex -->
+                      \[
+                      \nabla^2\psi + \frac{8\pi^2m}{h^2}(E-V) = 0
+                      \]
+                      YOUR TEXT</div>
+                  </div>
 
                   <!-- CARD -->
                   <div class="pf-c-card pf-m-selectable" id="primary-detail-card-view-expanded-example-card-9">
@@ -163,6 +149,9 @@ t.bindTo([f1, f2, p, e1, e2, o]);
                     </div>
                     <div class="pf-c-card__body">
                       \[ax^2 + bx + c = 0\]
+                      \[
+                      \iiiint_V \mu(t,u,v,w) \,dt\,du\,dv\,dw
+                      \]
 
                       <!-- \[\mathbb {N} _{Natural numbers} \]
                       \[\mathbb {Z}  _{Integers} \]
@@ -207,8 +196,55 @@ t.bindTo([f1, f2, p, e1, e2, o]);
                         <small>Provided by Core+</small>
                       </div>
                     </div>
-                    <img src="img/tensor.svg" />
+                    <!-- <img src="img/tensor.svg" /> -->
+                    <div id='jxgbox' class='jxgbox' style='width:190px; height:190px;'></div>
+
                     <div class="pf-c-card__body">
+                      
+                      <script type='text/javascript'>
+                        JXG.Options.label.autoPosition = true;
+                        JXG.Options.text.fontSize = 16;
+                        JXG.Options.line.strokeWidth = 0.8;
+                        JXG.Options.point.size = 1;
+                        
+                        var board = JXG.JSXGraph.initBoard('jxgbox', { boundingbox: [-5, 5, 5, -5], axis: true, showClearTraces: true});
+                        
+                        const sq5 = Math.sqrt(5);
+                        
+                        // Start with the Euclidean normal form of the quadric,
+                        // because we easily can read off the focal points.
+                        var f1 = board.create('point', [0, -sq5], {name:"f'", fixed: true});
+                        var f2 = board.create('point', [0, sq5], {name:"f", fixed: true});
+                        var p  = board.create('point', [2, Math.sqrt(2)], {name:"p", fixed: true});
+                        
+                        var o = board.create('point', [0, 0], {withLabel:false, color: 'blue', fixed: true, trace:true});
+                        var e1 = board.create('point', [1, 0], {withLabel:false, color: 'blue', fixed: true});
+                        var e2 = board.create('point', [0, 1], {withLabel:false, color: 'blue', fixed: true});
+                        
+                        // Undo the principal axis transformation to recompute the original form of the quadric
+                        var phi0 = board.create('transform', [-Math.PI * 0.25], {type: 'rotate'});
+                        var t0 = board.create('transform', [-2, 1], {type: 'translate'});
+                        t0.bindTo([f1, f2, p, o, e1, e2]);
+                        phi0.bindTo([f1, f2, p, o, e1, e2]);
+                        
+                        var hyp = board.create('hyperbola', [f1, f2, p]);
+                        
+                        // Create transformed axes
+                        var ax_z1 = board.create('line', [o, e1], {lastArrow: true, strokeColor:'black'});
+                        var ax_z2 = board.create('line', [o, e2], {lastArrow: true, strokeColor:'black'});
+                        board.update();
+                        
+                        // Visualization of the principal axis transformation
+                        var alpha = board.create('slider', [[1,4], [3,4], [0, 0, 45]], {name:'&alpha;', unitLabel:'°'});
+                        var f = board.create('slider', [[1,3.5], [3,3.5], [0, 0, 1]], {name:'f'});
+                        
+                        var phi = board.create('transform', [function(){ return alpha.Value() * Math.PI / 180; }], {type: 'rotate'});
+                        var t = board.create('transform', [function(){ return 2*f.Value(); }, function(){ return -f.Value(); }], {type: 'translate'});
+                        
+                        phi.bindTo([f1, f2, p, e1, e2, o]);
+                        t.bindTo([f1, f2, p, e1, e2, o]);       
+                                   </script>
+
                       \[g^{\alpha\beta}g^{\gamma\delta}R_{\alpha\mu\gamma\nu}=R^{\beta\;\delta}_{\;\mu\;\nu}\]
 
                       an algebraic object that describes a (multilinear) relationship between sets of algebraic objects
@@ -238,6 +274,23 @@ t.bindTo([f1, f2, p, e1, e2, o]);
                       \bra{\vec{a}\,\smash{'}}\ket{\vec{a}\,}
                       \]
                       Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It is the foundation of all quantum physics including quantum chemistry, quantum field theory, quantum technology, and quantum information science.</div>
+                  </div>
+
+                  <!-- TEMPLATE CARD -->
+                  <div class="pf-c-card pf-m-selectable" id="primary-detail-card-view-expanded-example-card-10">
+                    <div class="pf-c-card__title">
+                      <p id="primary-detail-card-view-expanded-example-card-10-check-label"><h1 class="pf-c-title pf-m-3xl">Module name</h1></p>
+                      <div class="pf-c-content">
+                        <small>Provided by Core</small>
+                      </div>
+                    </div>
+                    <img src="img/orbitals.png" />  <!-- or js code -->
+                    <div class="pf-c-card__body">
+                      <!-- mathjax/tex -->
+                      \[
+                      \nabla^2\psi + \frac{8\pi^2m}{h^2}(E-V) = 0
+                      \]
+                      YOUR TEXT</div>
                   </div>
 
                 </div>
