@@ -8,6 +8,14 @@ math reimagined.. CONCEPT ONLY
 
 > podman run -dt -p 7878:7878/tcp localhost/remath
 
+```
+oc new-project remath-project
+oc new-app https://github.com/peterducai/remath.git
+oc expose service/remath
+oc status
+
+```
+
 see http://localhost:7878/
 
 ## Libs
