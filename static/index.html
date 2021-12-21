@@ -147,12 +147,20 @@
                         <small>Provided by Core</small>
                       </div>
                     </div>
-                    <img src="../static/img/remath.svg" /> 
+                    <img src="img/remath.svg" /> 
                     <div class="pf-c-card__body">
-                      \[ax^2 + bx + c = 0\]
-                      \[
-                      \iiiint_V \mu(t,u,v,w) \,dt\,du\,dv\,dw
-                      \]
+                      
+                        \[
+                        \newcommand{\ra}[1]{\kern-1.5ex\xrightarrow{\ \ #1\ \ }\phantom{}\kern-1.5ex}
+                        \newcommand{\ras}[1]{\kern-1.5ex\xrightarrow{\ \ \smash{#1}\ \ }\phantom{}\kern-1.5ex}
+                        \newcommand{\da}[1]{\bigg\downarrow\raise.5ex\rlap{\scriptstyle#1}}
+                        \begin{array}{c}
+                        0 & \ra{f_1} & A & \ra{f_2} & B & \ra{f_3} & C & \ra{f_4} & D & \ra{f_5} & 0 \\
+                        \da{g_1} & & \da{g_2} & & \da{g_3} & & \da{g_4} & & \da{g_5} & & \da{g_6} \\
+                        0 & \ras{h_1} & 0 & \ras{h_2} & E & \ras{h_3} & F & \ras{h_4} & 0 & \ras{h_5} & 0 \\
+                        \end{array}
+                        \]
+                      
 
                       <!-- \[\mathbb {N} _{Natural numbers} \]
                       \[\mathbb {Z}  _{Integers} \]
