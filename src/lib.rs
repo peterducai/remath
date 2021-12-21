@@ -3,5 +3,5 @@ pub mod threader;
 // pub mod painter;
 pub mod png;
 pub mod planet;
-pub mod astro;
-pub mod quantum;
+pub mod phys;
+pub mod math;
