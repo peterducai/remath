@@ -3,7 +3,7 @@ FROM registry.fedoraproject.org/fedora-minimal AS build
 RUN mkdir /remath && microdnf install git rust cargo -y && microdnf clean all -y
 WORKDIR /remath 
 COPY . /remath
-RUN cd /remath && cargo build
+RUN cd /remath && cargo clean && cargo build
 # RUN export GOPATH=/go; CGO_ENABLED=0 go get github.com/peterducai/remath && go build github.com/peterducai/remath
 # COPY generate_certs.sh .
 # RUN chmod +x generate_certs.sh && ./generate_certs.sh
