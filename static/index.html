@@ -14,25 +14,26 @@
 </head>
 
 <body>
-  <div class="pf-c-page" id="primary-detail-card-view-expanded-example">
+  <div class="pf-c-page" id="primary-detail-card-data-list-example">
     <a class="pf-c-skip-to-content pf-c-button pf-m-primary"
-      href="#main-content-primary-detail-card-view-expanded-example">Skip to content</a>
+      href="#main-content-primary-detail-card-data-list-example">Skip to content</a>
     <header class="pf-c-page__header">
       <div class="pf-c-page__header-brand">
         <div class="pf-c-page__header-brand-toggle">
-          <button class="pf-c-button pf-m-plain" type="button" id="primary-detail-card-view-expanded-example-nav-toggle"
+          <button class="pf-c-button pf-m-plain" type="button" id="primary-detail-card-data-list-example-nav-toggle"
             aria-label="Global navigation" aria-expanded="true"
-            aria-controls="primary-detail-card-view-expanded-example-primary-nav">
+            aria-controls="primary-detail-card-data-list-example-primary-nav">
             <i class="fas fa-bars" aria-hidden="true"></i>
           </button>
         </div>
         <a href="#" class="pf-c-page__header-brand-link">
-          <img class="pf-c-brand" src="img/remath.svg" alt="PatternFly logo" />
+          <img class="pf-c-brand" src="/assets/images/PF-Masthead-Logo.svg" alt="PatternFly logo" />
         </a>
       </div>
+
       <div class="pf-c-page__header-tools">
         <div class="pf-c-page__header-tools-group">
-          <div class="pf-c-page__header-tools-item pf-m-hidden pf-m-visible-on-lg ">
+          <div class="pf-c-page__header-tools-item pf-m-hidden pf-m-visible-on-lg">
             <button class="pf-c-button pf-m-plain" type="button" aria-label="Settings">
               <i class="fas fa-cog" aria-hidden="true"></i>
             </button>
@@ -43,11 +44,74 @@
             </button>
           </div>
         </div>
+        <div class="pf-c-page__header-tools-group">
+          <div class="pf-c-page__header-tools-item pf-m-hidden-on-lg">
+            <div class="pf-c-dropdown">
+              <button class="pf-c-dropdown__toggle pf-m-plain"
+                id="primary-detail-card-data-list-example-dropdown-kebab-1-button" aria-expanded="false" type="button"
+                aria-label="Actions">
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+              </button>
+              <ul class="pf-c-dropdown__menu pf-m-align-right"
+                aria-labelledby="primary-detail-card-data-list-example-dropdown-kebab-1-button" hidden>
+                <li>
+                  <a class="pf-c-dropdown__menu-item" href="#">Link</a>
+                </li>
+                <li>
+                  <button class="pf-c-dropdown__menu-item" type="button">Action</button>
+                </li>
+                <li>
+                  <a class="pf-c-dropdown__menu-item pf-m-disabled" href="#" aria-disabled="true" tabindex="-1">Disabled
+                    link</a>
+                </li>
+                <li>
+                  <button class="pf-c-dropdown__menu-item" type="button" disabled>Disabled action</button>
+                </li>
+                <li class="pf-c-divider" role="separator"></li>
+                <li>
+                  <a class="pf-c-dropdown__menu-item" href="#">Separated link</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pf-c-page__header-tools-item pf-m-hidden pf-m-visible-on-md">
+            <div class="pf-c-dropdown">
+              <button class="pf-c-dropdown__toggle pf-m-plain"
+                id="primary-detail-card-data-list-example-dropdown-kebab-2-button" aria-expanded="false" type="button">
+                <span class="pf-c-dropdown__toggle-text">John Smith</span>
+                <span class="pf-c-dropdown__toggle-icon">
+                  <i class="fas fa-caret-down" aria-hidden="true"></i>
+                </span>
+              </button>
+              <ul class="pf-c-dropdown__menu"
+                aria-labelledby="primary-detail-card-data-list-example-dropdown-kebab-2-button" hidden>
+                <li>
+                  <a class="pf-c-dropdown__menu-item" href="#">Link</a>
+                </li>
+                <li>
+                  <button class="pf-c-dropdown__menu-item" type="button">Action</button>
+                </li>
+                <li>
+                  <a class="pf-c-dropdown__menu-item pf-m-disabled" href="#" aria-disabled="true" tabindex="-1">Disabled
+                    link</a>
+                </li>
+                <li>
+                  <button class="pf-c-dropdown__menu-item" type="button" disabled>Disabled action</button>
+                </li>
+                <li class="pf-c-divider" role="separator"></li>
+                <li>
+                  <a class="pf-c-dropdown__menu-item" href="#">Separated link</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img class="pf-c-avatar" src="/assets/images/img_avatar.svg" alt="Avatar image" />
       </div>
     </header>
     <div class="pf-c-page__sidebar">
       <div class="pf-c-page__sidebar-body">
-        <nav class="pf-c-nav" id="primary-detail-card-view-expanded-example-primary-nav" aria-label="Global">
+        <nav class="pf-c-nav" id="primary-detail-card-data-list-example-primary-nav" aria-label="Global">
           <ul class="pf-c-nav__list">
             <li class="pf-c-nav__item">
               <a href="#" class="pf-c-nav__link pf-m-current" aria-current="page">Modules</a>
@@ -56,10 +120,10 @@
               <a href="#" class="pf-c-nav__link">Sketchbook</a>
             </li>
             <li class="pf-c-nav__item">
-              <a href="#" class="pf-c-nav__link">Dictionary</a>
+              <a href="#" class="pf-c-nav__link">Sources</a>
             </li>
             <li class="pf-c-nav__item">
-              <a href="#" class="pf-c-nav__link">Algorithms</a>
+              <a href="#" class="pf-c-nav__link">Docs</a>
             </li>
             <li class="pf-c-nav__item">
               <a href="#" class="pf-c-nav__link">About</a>
@@ -69,181 +133,289 @@
       </div>
     </div>
     <main class="pf-c-page__main" tabindex="-1">
+      <!-- <section class="pf-c-page__main-breadcrumb pf-m-limit-width">
+        <div class="pf-c-page__main-body">
+          <nav class="pf-c-breadcrumb" aria-label="breadcrumb">
+            <ol class="pf-c-breadcrumb__list">
+              <li class="pf-c-breadcrumb__item">
+                <a href="#" class="pf-c-breadcrumb__link">Section home</a>
+              </li>
+              <li class="pf-c-breadcrumb__item">
+                <span class="pf-c-breadcrumb__item-divider">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </span>
+  
+                <a href="#" class="pf-c-breadcrumb__link">Section title</a>
+              </li>
+              <li class="pf-c-breadcrumb__item">
+                <span class="pf-c-breadcrumb__item-divider">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </span>
+  
+                <a href="#" class="pf-c-breadcrumb__link">Section title</a>
+              </li>
+              <li class="pf-c-breadcrumb__item">
+                <span class="pf-c-breadcrumb__item-divider">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </span>
+  
+                <a
+                  href="#"
+                  class="pf-c-breadcrumb__link pf-m-current"
+                  aria-current="page"
+                >Section landing</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section> -->
 
       <section class="pf-c-page__main-section pf-m-light">
         <div class="pf-c-content">
-          <h1>Modules</h1>
-          <p>Currently installed modules.</p>
-          <div id='jxgbox' class='jxgbox' style='width:190px; height:190px;'></div><script type='text/javascript'>
-            JXG.Options.label.autoPosition = true;
-JXG.Options.text.fontSize = 16;
-JXG.Options.line.strokeWidth = 0.8;
-JXG.Options.point.size = 1;
-
-var board = JXG.JSXGraph.initBoard('jxgbox', { boundingbox: [-5, 5, 5, -5], axis: true, showClearTraces: true});
-
-const sq5 = Math.sqrt(5);
-
-// Start with the Euclidean normal form of the quadric,
-// because we easily can read off the focal points.
-var f1 = board.create('point', [0, -sq5], {name:"f'", fixed: true});
-var f2 = board.create('point', [0, sq5], {name:"f", fixed: true});
-var p  = board.create('point', [2, Math.sqrt(2)], {name:"p", fixed: true});
-
-var o = board.create('point', [0, 0], {withLabel:false, color: 'blue', fixed: true, trace:true});
-var e1 = board.create('point', [1, 0], {withLabel:false, color: 'blue', fixed: true});
-var e2 = board.create('point', [0, 1], {withLabel:false, color: 'blue', fixed: true});
-
-// Undo the principal axis transformation to recompute the original form of the quadric
-var phi0 = board.create('transform', [-Math.PI * 0.25], {type: 'rotate'});
-var t0 = board.create('transform', [-2, 1], {type: 'translate'});
-t0.bindTo([f1, f2, p, o, e1, e2]);
-phi0.bindTo([f1, f2, p, o, e1, e2]);
-
-var hyp = board.create('hyperbola', [f1, f2, p]);
-
-// Create transformed axes
-var ax_z1 = board.create('line', [o, e1], {lastArrow: true, strokeColor:'black'});
-var ax_z2 = board.create('line', [o, e2], {lastArrow: true, strokeColor:'black'});
-board.update();
-
-// Visualization of the principal axis transformation
-var alpha = board.create('slider', [[1,4], [3,4], [0, 0, 45]], {name:'&alpha;', unitLabel:'°'});
-var f = board.create('slider', [[1,3.5], [3,3.5], [0, 0, 1]], {name:'f'});
-
-var phi = board.create('transform', [function(){ return alpha.Value() * Math.PI / 180; }], {type: 'rotate'});
-var t = board.create('transform', [function(){ return 2*f.Value(); }, function(){ return -f.Value(); }], {type: 'translate'});
-
-phi.bindTo([f1, f2, p, e1, e2, o]);
-t.bindTo([f1, f2, p, e1, e2, o]);       
-           </script>
-
-          <ul class="pf-c-list">
-            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-            <li>Discrete mathematics/algebra [Study of structure of mathematical abstractions]
-              <ul class="pf-c-list">
-                <li>05: Combinatorics</li>
-                <li>06: Order, lattices, ordered algebraic structures</li>
-                <li>08: General algebraic systems</li>
-              </ul>
-            </li>
-            <li>Ut non enim metus.</li>
-          </ul>
-
-          \[
-          \newcommand{\ra}[1]{\kern-1.5ex\xrightarrow{\ \ #1\ \ }\phantom{}\kern-1.5ex}
-          \newcommand{\ras}[1]{\kern-1.5ex\xrightarrow{\ \ \smash{#1}\ \ }\phantom{}\kern-1.5ex}
-          \newcommand{\da}[1]{\bigg\downarrow\raise.5ex\rlap{\scriptstyle#1}}
-          \begin{array}{c}
-          0 & \ra{f_1} & A & \ra{f_2} & B & \ra{f_3} & C & \ra{f_4} & D & \ra{f_5} & 0 \\
-          \da{g_1} & & \da{g_2} & & \da{g_3} & & \da{g_4} & & \da{g_5} & & \da{g_6} \\
-          0 & \ras{h_1} & 0 & \ras{h_2} & E & \ras{h_3} & F & \ras{h_4} & 0 & \ras{h_5} & 0 \\
-          \end{array}
-          \]
+          <h1>Installed modules</h1>
+          <p>Here you can find all installed modules.</p>
         </div>
       </section>
 
-      <section class="pf-c-page__main-section pf-m-no-padding">
-        <!-- Drawer -->
-        <div class="pf-c-drawer pf-m-expanded pf-m-inline-on-2xl">
-          <div class="pf-c-drawer__main">
-            <!-- Content -->
-            <div class="pf-c-drawer__content pf-m-no-background">
-              <div class="pf-c-drawer__body pf-m-padding">
-                <div class="pf-l-gallery pf-m-gutter">
+      <section class="pf-c-page__main-section">
+        <div class="pf-c-card">
+          <!-- Drawer -->
+          <div class="pf-c-drawer pf-m-expanded pf-m-static">
+            <div class="pf-c-drawer__main">
+              <!-- Content -->
+              <div class="pf-c-drawer__content">
+                <div class="pf-c-drawer__body">
+                  <div class="pf-c-toolbar" id="primary-detail-card-data-list-example-toolbar">
+                    <div class="pf-c-toolbar__content">
+                      <div class="pf-c-toolbar__content-section">
+                        <div class="pf-c-toolbar__item">
+                          <div class="pf-c-select" style="width: 150px">
+                            <span id="primary-detail-card-data-list-example-toolbar-select-dropdown-label" hidden>Choose
+                              one</span>
 
-                  <!-- CARD -->
-                  <div class="pf-c-card pf-m-selectable" id="primary-detail-card-view-expanded-example-card-9">
-                    <div class="pf-c-card__title">
-                      <p id="primary-detail-card-view-expanded-example-card-9-check-label">Algebra</p>
-                      <div class="pf-c-content">
-                        <small>Provided by Core</small>
+                            <button class="pf-c-select__toggle" type="button"
+                              id="primary-detail-card-data-list-example-toolbar-select-dropdown-toggle"
+                              aria-haspopup="true" aria-expanded="false"
+                              aria-labelledby="primary-detail-card-data-list-example-toolbar-select-dropdown-label primary-detail-card-data-list-example-toolbar-select-dropdown-toggle">
+                              <div class="pf-c-select__toggle-wrapper">
+                                <span class="pf-c-select__toggle-text">Dropdown</span>
+                              </div>
+                              <span class="pf-c-select__toggle-arrow">
+                                <i class="fas fa-caret-down" aria-hidden="true"></i>
+                              </span>
+                            </button>
+
+                            <ul class="pf-c-select__menu" role="listbox"
+                              aria-labelledby="primary-detail-card-data-list-example-toolbar-select-dropdown-label"
+                              hidden style="width: 150px">
+                              <li role="presentation">
+                                <button class="pf-c-select__menu-item" role="option">Running</button>
+                              </li>
+                              <li role="presentation">
+                                <button class="pf-c-select__menu-item pf-m-selected" role="option" aria-selected="true">
+                                  Stopped
+                                  <span class="pf-c-select__menu-item-icon">
+                                    <i class="fas fa-check" aria-hidden="true"></i>
+                                  </span>
+                                </button>
+                              </li>
+                              <li role="presentation">
+                                <button class="pf-c-select__menu-item" role="option">Down</button>
+                              </li>
+                              <li role="presentation">
+                                <button class="pf-c-select__menu-item" role="option">Degraded</button>
+                              </li>
+                              <li role="presentation">
+                                <button class="pf-c-select__menu-item" role="option">Needs maintenance</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="pf-c-toolbar__item pf-m-pagination">
+                          <div class="pf-c-pagination">
+                            <div class="pf-c-pagination__total-items">
+                              <b>1 - 10</b> of
+                              <b>37</b>
+                            </div>
+                            <div class="pf-c-options-menu">
+                              <div class="pf-c-options-menu__toggle pf-m-text pf-m-plain">
+                                <span class="pf-c-options-menu__toggle-text">
+                                  <b>1 - 10</b>&nbsp;of&nbsp;
+                                  <b>36</b>
+                                </span>
+                                <button class="pf-c-options-menu__toggle-button"
+                                  id="primary-detail-card-data-list-example-toolbar-pagination-options-menu-toggle"
+                                  aria-haspopup="listbox" aria-expanded="false" aria-label="Items per page">
+                                  <span class="pf-c-options-menu__toggle-button-icon">
+                                    <i class="fas fa-caret-down" aria-hidden="true"></i>
+                                  </span>
+                                </button>
+                              </div>
+                              <ul class="pf-c-options-menu__menu"
+                                aria-labelledby="primary-detail-card-data-list-example-toolbar-pagination-options-menu-toggle"
+                                hidden>
+                                <li>
+                                  <button class="pf-c-options-menu__menu-item" type="button">5 per page</button>
+                                </li>
+                                <li>
+                                  <button class="pf-c-options-menu__menu-item" type="button">
+                                    10 per page
+                                    <div class="pf-c-options-menu__menu-item-icon">
+                                      <i class="fas fa-check" aria-hidden="true"></i>
+                                    </div>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="pf-c-options-menu__menu-item" type="button">20 per page</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pf-c-toolbar__expandable-content pf-m-hidden"
+                        id="primary-detail-card-data-list-example-toolbar-expandable-content" hidden></div>
+                    </div>
+                  </div>
+                  <!-- DATA LIST -->
+                  <ul class="pf-c-data-list" role="list" aria-label="Selectable rows data list example"
+                    id="primary-detail-card-data-list-example-data-list">
+                    <li class="pf-c-data-list__item pf-m-selectable"
+                      aria-labelledby="primary-detail-card-data-list-example-data-list-item-1" tabindex="0">
+                      <div class="pf-c-data-list__item-row">
+                        <div class="pf-c-data-list__item-content">
+                          <div class="pf-c-data-list__cell">
+                            <div id="primary-detail-card-data-list-example-data-list-item-1">Algebra</div>
+                            <a href="#">math/algebra</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="pf-c-data-list__item pf-m-selectable pf-m-selected"
+                      aria-labelledby="primary-detail-card-data-list-example-data-list-item-2" tabindex="0">
+                      <div class="pf-c-data-list__item-row">
+                        <div class="pf-c-data-list__item-content">
+                          <div class="pf-c-data-list__cell">
+                            <div id="primary-detail-card-data-list-example-data-list-item-2">Matrices</div>
+                            <a href="#">math/matrix</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="pf-c-data-list__item pf-m-selectable"
+                      aria-labelledby="primary-detail-card-data-list-example-data-list-item-3" tabindex="0">
+                      <div class="pf-c-data-list__item-row">
+                        <div class="pf-c-data-list__item-content">
+                          <div class="pf-c-data-list__cell">
+                            <div id="primary-detail-card-data-list-example-data-list-item-3">Tensors</div>
+                            <a href="#">math/tensor</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="pf-c-data-list__item pf-m-selectable"
+                      aria-labelledby="primary-detail-card-data-list-example-data-list-item-10" tabindex="0">
+                      <div class="pf-c-data-list__item-row">
+                        <div class="pf-c-data-list__item-content">
+                          <div class="pf-c-data-list__cell">
+                            <div id="primary-detail-card-data-list-example-data-list-item-10">Orbital mechanics</div>
+                            <a href="#">phys/orbital-mechanics</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Panel -->
+              <div class="pf-c-drawer__panel pf-m-width-75-on-2xl" id="primary-detail-card-data-list-example-panel"
+                aria-label="Panel">
+                <!-- Panel header -->
+                <div class="pf-c-drawer__body">
+                  <div class="pf-l-flex pf-m-column">
+                    <div class="pf-l-flex__item">
+                      <div class="pf-c-drawer__head">
+                        <div class="pf-c-drawer__actions">
+                          <div class="pf-c-drawer__close">
+                            <button class="pf-c-button pf-m-plain" type="button" aria-label="Close drawer panel">
+                              <i class="fas fa-times" aria-hidden="true"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- NAME -->
+                        <h2 class="pf-c-title pf-m-lg" id="primary-detail-card-data-list-example-drawer-label">Matrices
+                        </h2>
+                        <!-- MATH -->
+                        <div>
+                          \[
+                          M=
+                          \begin{bmatrix}
+                          1 & 2 & 3 & 4 & 5 \\
+                          3 & 4 & 5 & 6 & 7
+                          \end{bmatrix}
+                          \]
+
+                        </div>
                       </div>
                     </div>
-                    <div class="pf-c-card__body">
-                      \[ax^2 + bx + c = 0\]
-
-                      <!-- \[\mathbb {N} _{Natural numbers} \]
-                      \[\mathbb {Z}  _{Integers} \]
-                      \[\mathbb {Q}  _{Rational numbers} \]
-                      \[\mathbb {R}  _{Real numbers} \]
-                      \[\mathbb {C}  _{Complex numbers} \]
-                      \[\mathbb {H}  _{Quaternions} \]
-                      \[\mathbb {O}  _{Octonions} \] -->
-                      study of mathematical symbols and the rules for manipulating these symbols; it is a unifying
-                      thread of almost all of mathematics. It includes everything from elementary equation solving to
-                      the study of abstractions such as groups, rings, and fields.</div>
                   </div>
+                </div>
 
-                  <!-- CARD -->
-                  <div class="pf-c-card pf-m-selectable" id="primary-detail-card-view-expanded-example-card-9">
-                    <div class="pf-c-card__title">
-                      <p id="primary-detail-card-view-expanded-example-card-9-check-label">Matrices</p>
-                      <div class="pf-c-content">
-                        <small>Provided by Core</small>
+                <div class="pf-c-drawer__body">
+                  <div class="pf-l-flex pf-m-column pf-m-space-items-lg">
+                    <div class="pf-l-flex__item">
+                      <!-- DESCRIPTION -->
+                      <p>A matrix is a rectangular array of numbers (or other mathematical objects) for which operations
+                        such as addition and multiplication are defined. Most commonly, a matrix over a field F is a
+                        rectangular array of scalars, each of which is a member of F. Most of this article focuses on
+                        real
+                        and complex matrices, that is, matrices whose elements are respectively real numbers or complex
+                        numbers.</p>
+                    </div>
+                    <div class="pf-l-flex__item">
+                      <div class="pf-c-progress" id="primary-detail-card-data-list-example-progress-example1">
+                        <div class="pf-c-progress__description"
+                          id="primary-detail-card-data-list-example-progress-example1-description">Dificulty</div>
+                        <div class="pf-c-progress__status" aria-hidden="true">
+                          <span class="pf-c-progress__measure">33%</span>
+                        </div>
+                        <div class="pf-c-progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                          aria-valuenow="33"
+                          aria-labelledby="primary-detail-card-data-list-example-progress-example1-description"
+                          aria-label="Progress 1">
+                          <div class="pf-c-progress__indicator" style="width:33%;"></div>
+                        </div>
                       </div>
                     </div>
-                    <div class="pf-c-card__body">
-                      \[
-                      M=
-                      \begin{bmatrix}
-                      1 & 2 & 3 & 4 & 5 \\
-                      3 & 4 & 5 & 6 & 7
-                      \end{bmatrix}
-                      \]
-                      A matrix is a rectangular array of numbers (or other mathematical objects) for which operations
-                      such as addition and multiplication are defined. Most commonly, a matrix over a field F is a
-                      rectangular array of scalars, each of which is a member of F. Most of this article focuses on real
-                      and complex matrices, that is, matrices whose elements are respectively real numbers or complex
-                      numbers.</div>
-                  </div>
-
-                  <!-- CARD -->
-                  <div class="pf-c-card pf-m-selectable" id="primary-detail-card-view-expanded-example-card-10">
-                    <div class="pf-c-card__title">
-                      <p id="primary-detail-card-view-expanded-example-card-10-check-label">Tensors</p>
-                      <div class="pf-c-content">
-                        <small>Provided by Core+</small>
+                    <div class="pf-l-flex__item">
+                      <div class="pf-c-progress" id="primary-detail-card-data-list-example-progress-example2">
+                        <div class="pf-c-progress__description"
+                          id="primary-detail-card-data-list-example-progress-example2-description">Details</div>
+                        <div class="pf-c-progress__status" aria-hidden="true">
+                          <span class="pf-c-progress__measure">66%</span>
+                        </div>
+                        <div class="pf-c-progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                          aria-valuenow="66"
+                          aria-labelledby="primary-detail-card-data-list-example-progress-example2-description"
+                          aria-label="Progress 2">
+                          <div class="pf-c-progress__indicator" style="width:66%;"></div>
+                        </div>
                       </div>
                     </div>
-                    <img src="img/tensor.svg" />
-                    <div class="pf-c-card__body">
-                      \[g^{\alpha\beta}g^{\gamma\delta}R_{\alpha\mu\gamma\nu}=R^{\beta\;\delta}_{\;\mu\;\nu}\]
 
-                      an algebraic object that describes a (multilinear) relationship between sets of algebraic objects
-                      related to a vector space. Objects that tensors may map between include vectors and scalars, and
-                      even other tensors.</div>
-                  </div>
-
-                  <!-- CARD -->
-                  <div class="pf-c-card pf-m-selectable" id="primary-detail-card-view-expanded-example-card-10">
-                    <div class="pf-c-card__title">
-                      <p id="primary-detail-card-view-expanded-example-card-10-check-label">Quantum mechanics</p>
-                      <div class="pf-c-content">
-                        <small>Provided by Core+</small>
-                      </div>
+                    <div>
+                      <a class="pf-c-button pf-m-primary"
+                        href="https://www.w3.org/TR/WCAG20-TECHS/ARIA8.html#ARIA8-examples">Enter the course</a>
                     </div>
-                    <img src="img/orbitals.png" />
-                    <div class="pf-c-card__body">
-                      <!-- \[
-                      -\dfrac{\hslash^2}{2m \partial x^{2^{1^1}}}
-                      \, \dfrac{\partial^2 \psi}{\partial x^{2^{1^1}}}
-                      \] -->
-                      \[
-                      \nabla^2\psi + \frac{8\pi^2m}{h^2}(E-V) = 0
-                      \]
-                      \[
-                      \bra{\vec{q}\,\smash{'}}\ket{\vec{q}\,} \quad
-                      \bra{\vec{a}\,\smash{'}}\ket{\vec{a}\,}
-                      \]
-                      Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It is the foundation of all quantum physics including quantum chemistry, quantum field theory, quantum technology, and quantum information science.</div>
-                  </div>
 
+                  </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
