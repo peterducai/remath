@@ -7,3 +7,7 @@ edition = "2018"
 
 [dependencies]
 rustc_version_runtime = "0.1.*"
+
+[features]
+tensors = []
+spinors = []

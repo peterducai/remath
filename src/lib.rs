@@ -3,6 +3,6 @@ pub mod threader;
 // pub mod painter;
 pub mod png;
 pub mod phys;
-pub mod math;
+pub mod tensor;
 pub mod matrix;
 pub mod engine;
