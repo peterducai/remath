@@ -3,15 +3,20 @@ use std::net::TcpListener;
 
 use remath::handler::handle_route;
 use remath::threader::ThreadPool;
+use remath::math::group;
 // use remath::astro::planet_mars::Mars;
 // use remath::math::tensor::tensor;
 use remath::math::complex;
+use remath::engine;
+
+
 
 //extern crate base64;
 
 fn main() {
+    remath::engine::get_version();
     let listener = TcpListener::bind("0.0.0.0:7878").unwrap();
-    println!("listening at http://0.0.0.0:7878");
+    println!("listening at http://0.0.0.0:7878 or http://localhost:7878");
     let pool = ThreadPool::new(4);
 
     for stream in listener.incoming() {
@@ -23,6 +28,7 @@ fn main() {
     }
 
     println!("Shutting down.");
+
 }
 
 
