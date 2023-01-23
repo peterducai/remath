@@ -4,5 +4,6 @@ pub mod threader;
 pub mod png;
 pub mod phys;
 pub mod tensor;
-pub mod matrix;
+pub mod math;
 pub mod engine;
+pub mod quantum;

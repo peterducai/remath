@@ -1,10 +1,10 @@
-//
-// pub mod engine;
-#[cfg(feature = "tensor")]
+//use crate::engine;
+//use crate::math::matrix;
+pub mod matrix;
 
-pub fn tensor_public_function() {
-    println!("called rary's `public_function()`");
-    //remath::engine::get_version();
+pub fn math_get_version() {
+    println!("matrix func `public_function()`");
+    //engine::get_version();
 }
 
 fn private_function() {

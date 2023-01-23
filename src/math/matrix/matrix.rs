@@ -1,9 +1,9 @@
-// pub mod matrix;
-use crate::engine;
+//use crate::engine;
+pub mod matrix;
 
-pub fn public_function() {
+pub fn matrix_public_function() {
     println!("matrix func `public_function()`");
-    engine::get_version();
+    //engine::get_version();
 }
 
 fn private_function() {
