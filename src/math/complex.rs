@@ -1,4 +1,4 @@
-mod complex {
+pub mod complex {
     pub struct Complex<T> {
         /// Real portion of the complex number
         pub re: T,
