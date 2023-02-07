@@ -2,22 +2,27 @@
 use crate::math;
 
 pub struct Group {
-    pub headline: String,
-    pub location: String,
-    pub author: String,
+    pub name: String,
+    pub set: String,
+    pub operation: String,
     pub content: String,
+    pub latex: String
 }
 
-impl Summary for Group {
+impl EmptyGroup for Group {
+    fn init(&self) {
+        self.latex = "$$ a \\otimes b = ab $$"
+        self.content = "va⊗b is known as an outer product of a and b."
+    }
     fn summarize(&self) -> String {
-        format!("{}, by {} ({})", self.headline, self.author, self.location)
+        format!("{}, by {} ({})", self.name, self.set, self.operation, self.content)
     }
 }
 
 pub fn math_group_get_version() {
     println!("matrix func `public_function()`");
     //engine::get_version();
-    math::matrix::matrix_public_function();
+    matrix::matrix_public_function();
 }
 
 fn private_function() {
