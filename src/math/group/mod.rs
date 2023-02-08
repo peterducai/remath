@@ -1,6 +1,9 @@
 //use crate::engine;
 use crate::math;
 
+//a group is a set and an operation that combines any two elements of the set to produce a third
+// element of the set, in such a way that the operation is associative, an identity element exists
+// and every element has an inverse.
 pub struct Group {
     pub name: String,
     pub set: String,
