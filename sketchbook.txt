@@ -105,3 +105,30 @@ $$
 $$
 
 $$\mathbb{J}_{i,j}=\dfrac{\partial f_{i}(\mathbf{x})}{\partial x_{j}}$$
+
+
+
+
+
+
+
+
+
+
+In general the modulation methods developed for radio communications can be adapted for underwater acoustic communications (UAC). However some of the modulation schemes are more suited to the unique underwater acoustic communication channel than others. Some of the modulation methods used for UAC are as follows:
+
+Frequency-shift keying (FSK)
+Phase-shift keying (PSK)
+Frequency-hopping spread spectrum (FHSS)
+Direct-sequence spread spectrum (DSSS)
+Frequency and pulse-position modulation (FPPM and PPM)
+Multiple frequency-shift keying (MFSK)
+Orthogonal frequency-division multiplexing (OFDM)
+
+
+
+
+
+
+
+
