@@ -4,5 +4,5 @@ pub mod threader;
 pub mod png;
 pub mod phys;
 pub mod math;
-pub mod engine;
+pub mod core;
 pub mod quantum;
