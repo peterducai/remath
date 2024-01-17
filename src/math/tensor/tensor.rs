@@ -1,4 +1,4 @@
-#![crate_name = "doc"]
+#[doc(inline)]
 
 //! tensor
 pub mod tensor {
