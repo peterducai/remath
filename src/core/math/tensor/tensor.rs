@@ -1,6 +1,6 @@
 #[doc(inline)]
 
-//! tensor
+// tensor
 pub mod tensor {
     pub struct Tensor {
         pub set: String,

@@ -2,6 +2,7 @@
 //use crate::math::matrix;
 pub mod engine;
 pub mod neural;
+pub mod math;
 
 // pub fn math_get_version() {
 //     println!("matrix func `public_function()`");
