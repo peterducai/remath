@@ -3,11 +3,11 @@ pub mod matrix2d {
         pub set: String,
         pub operations: Vec<String>,
         pub axioms: Vec<String>,
-        pub rows: i64,
-        pub columns: i64,
+        pub rows: u16,
+        pub columns: u16,
     }
 
-    pub fn remath_matrix_2d(rows: i64, columns:i64) {
+    pub fn remath_matrix_2d(rows: u16, columns:u16) {
         println!("The value of x is: {rows} {columns}");
     }
 
