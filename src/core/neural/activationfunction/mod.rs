@@ -1,1 +1,4 @@
 mod heaviside_stepfunction;
+mod sigmoid_function;
+mod softplus_activationfunction;
+mod rectifier_activationfunction;
