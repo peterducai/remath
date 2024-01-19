@@ -2,6 +2,8 @@
 // use rustc_version_runtime::version;
 // // use cargo_metadata::MetadataCommand;
 
+mod activationfunction;
+
 /// This module makes it easy.
 pub mod neural {
 
