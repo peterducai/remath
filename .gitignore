@@ -25,3 +25,5 @@ target/
 x/
 node_modules/
 /src/libmatrixlib.rlib
+/.fleet/
+/.vscode/

@@ -18,7 +18,7 @@ pub fn handle_route(mut stream: TcpStream) {
         urlsub = "/index.html";
     }
 
-    let a = "docs"; // URL/static + urlsub
+    let a = "web"; // URL/static + urlsub
     let pth = [a, urlsub].join("").to_owned();
     let response = file_to_response(&pth);
     
