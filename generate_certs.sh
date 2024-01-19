@@ -12,3 +12,5 @@ ln -sf server.ecdsa.crt server.crt
 openssl req -x509 -nodes -newkey rsa:2048 -keyout server.rsa.key -out server.rsa.crt -days 3650 -subj "/C=CZ/ST=Oregon/L=Portland/O=CompanyTest/OU=Org/CN=www.example.com"
 ln -sf server.rsa.key server.key
 ln -sf server.rsa.crt server.crt
+
+# openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
