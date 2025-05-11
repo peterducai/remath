@@ -7,3 +7,4 @@ pub mod set;
 pub mod tensor;
 pub mod algebraic_structure;
 pub mod complex;
+pub mod symbols;
